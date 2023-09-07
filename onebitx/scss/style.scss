@@ -1,0 +1,43 @@
+$background-color: #131212f1;
+$button-color: #ff0043;
+
+#bg-img {
+  background-image: url("../imgs/backgroundLp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+}
+
+.container1 {
+  background-color: $background-color;
+  width: 450px;
+  height: auto;
+}
+
+.top-logo {
+  width: 180px;
+}
+
+.paragraph {
+  margin: 6px 0px;
+}
+
+.btnSend {
+  color: $button-color;
+  border: 1px solid $button-color;
+  &:hover {
+    background-color: $button-color;
+    color: white;
+  }
+}
+
+@media (max-width: 450px) {
+  #bg-img {
+    width: auto;
+  }
+  .container1 {
+    width: auto;
+    height: auto;
+  }
+}
