@@ -1,0 +1,118 @@
+$text-color: white;
+$primary-shadow: #000 1px 10px 10px;
+@font-face {
+  font-family: spacex-font;
+  src: url("../font/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "spacex-font", "sans serif";
+}
+
+.logo {
+  width: 210px;
+}
+
+.navbar-nav {
+  strong {
+    padding: 5px 1px;
+  }
+  a {
+    font-size: 12px;
+    color: white;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+button.navbar-toggler.collapsed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  position: relative;
+  height: 100%;
+
+  .container-bar {
+    width: 23px;
+    margin: 10px;
+  }
+  .bar {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background-color: #fff;
+    width: 90%;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    height: 1.6px;
+  }
+  #bar2 {
+    position: absolute;
+    top: 7px;
+  }
+  #bar3 {
+    position: absolute;
+    top: 11px;
+  }
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #fff;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  height: 22vh;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+    &:hover {
+      transition: 00ms;
+      color: red;
+    }
+  }
+}
