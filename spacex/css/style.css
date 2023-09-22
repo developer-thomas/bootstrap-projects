@@ -1,0 +1,702 @@
+@font-face {
+  font-family: spacex-font;
+  src: url("../font/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "spacex-font", "sans serif";
+}
+
+.logo {
+  width: 210px;
+}
+
+.navbar-nav strong {
+  padding: 5px 1px;
+}
+.navbar-nav a {
+  font-size: 12px;
+  color: white;
+}
+.navbar-nav a:hover {
+  color: #fff;
+}
+
+button.navbar-toggler.collapsed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+  height: 100%;
+}
+.navbar-toggler-icon .container-bar {
+  width: 23px;
+  margin: 10px;
+}
+.navbar-toggler-icon .bar {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: #fff;
+  width: 90%;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  height: 1.6px;
+}
+.navbar-toggler-icon #bar2 {
+  position: absolute;
+  top: 7px;
+}
+.navbar-toggler-icon #bar3 {
+  position: absolute;
+  top: 11px;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #fff;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  height: 22vh;
+}
+.contact a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.contact a:hover {
+  transition: 0ms;
+  color: red;
+}
+
+.first-text {
+  height: 65vh;
+}
+
+.saiba-button {
+  width: 170px;
+  padding: 15px 35px;
+  border: 2px solid white;
+}
+
+.first-part {
+  background-image: url("../images/home/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.arrowdown {
+  height: 50px;
+  width: 90px;
+}
+
+.second-part {
+  background-image: url("../images/home/02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.third-part {
+  background-image: url("../images/home/03.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.common-section p {
+  text-shadow: #000 1px 10px 10px;
+}
+
+.fourth-part {
+  background-image: url("../images/home/04.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+}
+
+.main-falcon {
+  background-image: url("../images/falcon9/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.falcon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  text-shadow: #000 1px 10px 10px;
+}
+.falcon-text h1 {
+  font-weight: 700;
+}
+
+.part2 {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: black;
+  color: white;
+}
+.part2 p {
+  font-weight: 600;
+  padding: 5px;
+}
+
+.part3 {
+  height: 100vh;
+  background-image: url("../images/falcon9/02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: #000 1px 10px 10px;
+}
+.part3 .part3-text-container {
+  display: flex;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+.part3 .part3-text {
+  width: 34vw;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+@media (max-width: 1133px) {
+  .part3 .part3-text {
+    width: 60vw;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 550px) {
+  .part3 .part3-text {
+    width: 100vw;
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+}
+
+.part4 {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+.part4 .table-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  width: 70%;
+  margin-left: 15%;
+}
+.part4 .table-container:hover {
+  backdrop-filter: blur(2.5px);
+  transition: ease-in-out 500ms;
+}
+.part4 .table {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 35%;
+}
+.part4 .table tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.part4 .table td {
+  border: 0;
+}
+.part4 .container00.carrossel01 {
+  background-image: url(../images/falcon9/03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+@media (max-width: 992px) {
+  .part4 .table {
+    font-size: small;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .part4 .table-container {
+    font-size: smaller;
+    margin-left: 0px;
+    width: 100vw;
+    flex: 1 0 auto;
+  }
+}
+
+.part4 .container00.carrossel02 {
+  background-image: url(../images/falcon9/04.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.part4 .text-container-1 {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15%;
+}
+.part4 .text-container-1:hover {
+  backdrop-filter: blur(2.5px);
+  transition: ease-in-out 500ms;
+}
+.part4 .text-content {
+  width: 39%;
+  text-shadow: #000 1px 10px 10px;
+}
+
+@media (max-width: 425px) {
+  .part4 .text-content {
+    width: 57%;
+  }
+}
+.part4 .container00.carrossel03 {
+  background-image: url(../images/falcon9/05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.part4 .text-container-2 {
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 16%;
+}
+.part4 .text-container-2:hover {
+  backdrop-filter: blur(2.5px);
+  transition: ease-in-out 500ms;
+}
+.part4 .text-content-2 {
+  width: 30%;
+  text-shadow: #000 1px 10px 10px;
+}
+.part4 .text-content-2 .table-2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 100%;
+}
+.part4 .text-content-2 .table-2 tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.part4 .text-content-2 .table-2 td {
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  .part4 .text-content-2 {
+    width: 80%;
+  }
+}
+
+.part4 .container00.carrosel04 {
+  background-image: url(../images/falcon9/06.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.part4 .text-container-3 {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15%;
+}
+.part4 .text-container-3:hover {
+  backdrop-filter: blur(2.5px);
+  transition: ease-in-out 500ms;
+}
+.part4 .text-content-3 {
+  width: 36%;
+  text-shadow: #000 1px 10px 10px;
+}
+@media (max-width: 768px) {
+  .part4 .text-content-3 {
+    width: 80%;
+  }
+}
+
+.part4 .container00.carrosel05 {
+  background-image: url(../images/falcon9/07.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.part4 .text-container-4 {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15%;
+}
+.part4 .text-container-4:hover {
+  backdrop-filter: blur(2.5px);
+  transition: ease-in-out 500ms;
+}
+.part4 .text-content-4 {
+  width: 36%;
+  text-shadow: #000 1px 10px 10px;
+}
+.part4 .text-content-4 .table-3 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 100%;
+}
+.part4 .text-content-4 tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.part4 .text-content-4 td {
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  .part4 .text-content-4 {
+    width: 70%;
+  }
+}
+
+.part-5 {
+  height: 100vh;
+  background-image: url(../images/falcon9/08.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.part-5 .text-container-5 {
+  color: white;
+  text-shadow: #000 1px 10px 10px;
+  height: 100%;
+  margin-left: 15%;
+}
+.part-5 .text-container-5:hover {
+  backdrop-filter: blur(2.5px);
+  transition: ease-in-out 500ms;
+}
+.part-5 .text-content-5 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100%;
+  width: 35%;
+}
+.part-5 .table-4 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 100%;
+}
+.part-5 tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.part-5 td {
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  .part-5 .text-content-5 {
+    width: 80%;
+    font-size: small;
+  }
+}
+
+.part-6 {
+  height: 100vh;
+}
+.part-6 img {
+  height: 100vh;
+}
+.part-6 p {
+  background-color: black;
+  color: white;
+}
+
+.part-7 {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+.part-7 .text-container-7 {
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.part-7 .buttons-part-7 {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.part-7 .buttons-part-7 button {
+  border: 2px solid white;
+}
+
+p {
+  text-shadow: #000 1px 10px 10px;
+}
+
+.navbar-nav a {
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.bg-flight {
+  background-image: url("../images/flight/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.bg-flight .first-text-flight {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 63vh;
+}
+.bg-flight .first-text-flight:nth-child(2) {
+  color: white;
+}
+.bg-flight .first-text-flight p:nth-child(1) {
+  font-weight: 500;
+  text-shadow: #000 1px 10px 10px;
+}
+.bg-flight .first-text-flight p:last-child {
+  color: white;
+  font-weight: 10;
+  text-shadow: #000 1px 10px 10px;
+}
+
+.arrowDown-flight img {
+  height: 3rem;
+  width: 6rem;
+}
+
+.earth-top-text {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.earth-top-text p {
+  font-size: 20px;
+  font-weight: 400;
+  width: 40%;
+}
+@media (max-width: 1024px) {
+  .earth-top-text p {
+    font-size: medium;
+  }
+}
+@media (max-width: 768px) {
+  .earth-top-text p {
+    font-size: small;
+  }
+}
+@media (max-width: 326px) {
+  .earth-top-text p {
+    margin-top: 10%;
+  }
+}
+
+.earth-part {
+  background-image: url("../images/flight/02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.earth-part .mission-earth {
+  height: 88vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 23%;
+}
+@media (max-width: 1530px) {
+  .earth-part .mission-earth div button {
+    text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  }
+}
+.earth-part .mission-earth div {
+  line-height: 2rem;
+}
+.earth-part .mission-earth p:nth-child(2) {
+  font-weight: bold;
+}
+.earth-part .mission-earth p:nth-child(3) {
+  font-weight: lighter;
+}
+.earth-part .mission-earth button {
+  width: 10rem;
+}
+
+.station-part {
+  background-image: url("../images/flight/03.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.station-part .station-text-container {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5%;
+}
+.station-part .station-text-container div {
+  line-height: 2rem;
+}
+.station-part .station-text-container p:nth-child(2) {
+  font-weight: bold;
+}
+.station-part .station-text-container p:nth-child(3) {
+  font-weight: lighter;
+}
+.station-part .station-text-container button {
+  width: 10rem;
+}
+
+.moon-part {
+  background-image: url("../images/flight/04.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.moon-part .moon-text-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin-right: 23%;
+}
+.moon-part .moon-text-container div {
+  line-height: 2rem;
+}
+.moon-part .moon-text-container p:nth-child(2) {
+  font-weight: bold;
+}
+.moon-part .moon-text-container p:nth-child(3) {
+  font-weight: lighter;
+}
+.moon-part .moon-text-container button {
+  width: 10rem;
+}
+
+.mart-part {
+  background-image: url("../images/flight/05.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.mart-part .mart-text-container {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5%;
+}
+.mart-part .mart-text-container div {
+  line-height: 2rem;
+}
+.mart-part .mart-text-container p:nth-child(2) {
+  font-weight: bold;
+}
+.mart-part .mart-text-container p:nth-child(3) {
+  font-weight: lighter;
+}
+.mart-part .mart-text-container button {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
