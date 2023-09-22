@@ -1,0 +1,406 @@
+.main-falcon {
+  background-image: url("../images/falcon9/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  color: $text-color;
+}
+
+.falcon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  text-shadow: #000 1px 10px 10px;
+
+  h1 {
+    font-weight: 700;
+  }
+}
+
+// PARTE 2
+
+.part2 {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: black;
+  color: $text-color;
+
+  p {
+    font-weight: 600;
+    padding: 5px;
+  }
+}
+
+// PART 3 FALCON9
+
+.part3 {
+  height: 100vh;
+
+  background-image: url("../images/falcon9/02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: $primary-shadow;
+
+  .part3-text-container {
+    display: flex;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    color: $text-color;
+  }
+  .part3-text {
+    width: 34vw;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  // MEDIA QUERIES PARA TEXT PART 3
+  @media (max-width: 1133px) {
+    .part3-text {
+      width: 60vw;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .part3-text {
+      width: 100vw;
+      font-size: 0.9rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+// PART 4 - CARROSEL
+// NESTA PARTE POSSO COLOCAR UMA CLASSE EM COMUM PARA O POSICIONAMENTO DOS ELEMENTOS
+// IMG 01
+.part4 {
+  margin: 0px;
+  padding: 0px;
+
+  height: 100vh;
+
+  .table-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $text-color;
+    height: 100vh;
+    width: 70%;
+    margin-left: 15%;
+    &:hover {
+      backdrop-filter: blur(2.5px);
+      transition: ease-in-out 500ms;
+    }
+  }
+  .table {
+    background-color: rgba(0, 0, 0, 0);
+    color: $text-color;
+    width: 35%;
+
+    tr {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $text-color;
+    }
+
+    td {
+      border: 0;
+    }
+  }
+
+  .container00.carrossel01 {
+    background-image: url(../images/falcon9/03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  // MEDIA QUERIES
+  @media (max-width: 992px) {
+    .table {
+      font-size: small;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .table-container {
+      font-size: smaller;
+      margin-left: 0px;
+      width: 100vw;
+      flex: 1 0 auto;
+    }
+  }
+}
+
+// IMG 02 CARROSEL
+
+.part4 {
+  .container00.carrossel02 {
+    background-image: url(../images/falcon9/04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  // pra fazer ela percorrer para os lados, preciso definir uma largura 100vw para que
+  // tenha espaço para ela correr, assim que definir esse tamanho no elemento pai,
+  // posso delimitar o tamanho do texto em si no elemento filho e podendo fazer ele
+  // percorrer por todo o espaço que delimitei no elemento pai
+  // assim serve para o display flex
+  .text-container-1 {
+    color: $text-color;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15%;
+    &:hover {
+      backdrop-filter: blur(2.5px);
+      transition: ease-in-out 500ms;
+    }
+    // a porcentagem deixou bem responsivo
+  }
+  .text-content {
+    width: 39%;
+    text-shadow: $primary-shadow;
+  }
+}
+@media (max-width: 425px) {
+  .part4 .text-content {
+    width: 57%;
+  }
+}
+
+// IMG 03 CARROSEL
+.part4 {
+  .container00.carrossel03 {
+    background-image: url(../images/falcon9/05.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .text-container-2 {
+    height: 100%;
+
+    color: $text-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 16%;
+    &:hover {
+      backdrop-filter: blur(2.5px);
+      transition: ease-in-out 500ms;
+    }
+  }
+  .text-content-2 {
+    width: 30%;
+    text-shadow: $primary-shadow;
+    .table-2 {
+      background-color: rgba(0, 0, 0, 0);
+      color: $text-color;
+      width: 100%;
+
+      tr {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $text-color;
+      }
+
+      td {
+        padding: 0.5rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .text-content-2 {
+      width: 80%;
+    }
+  }
+}
+
+// IMG 04 CARROSEL
+
+.part4 {
+  .container00.carrosel04 {
+    background-image: url(../images/falcon9/06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .text-container-3 {
+    color: $text-color;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15%;
+    &:hover {
+      backdrop-filter: blur(2.5px);
+      transition: ease-in-out 500ms;
+    }
+  }
+  .text-content-3 {
+    width: 36%;
+    text-shadow: $primary-shadow;
+  }
+
+  @media (max-width: 768px) {
+    .text-content-3 {
+      width: 80%;
+    }
+  }
+}
+
+// IMG 05 CARROSEL
+
+.part4 {
+  .container00.carrosel05 {
+    background-image: url(../images/falcon9/07.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .text-container-4 {
+    color: $text-color;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15%;
+    &:hover {
+      backdrop-filter: blur(2.5px);
+      transition: ease-in-out 500ms;
+    }
+  }
+  .text-content-4 {
+    width: 36%;
+    text-shadow: $primary-shadow;
+    .table-3 {
+      background-color: rgba(0, 0, 0, 0);
+
+      color: $text-color;
+      width: 100%;
+    }
+
+    tr {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $text-color;
+    }
+
+    td {
+      padding: 0.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .text-content-4 {
+      width: 70%;
+    }
+  }
+}
+
+// PART 5 MERLIN
+.part-5 {
+  height: 100vh;
+  background-image: url(../images/falcon9/08.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .text-container-5 {
+    color: $text-color;
+    text-shadow: $primary-shadow;
+    height: 100%;
+    margin-left: 15%;
+    &:hover {
+      backdrop-filter: blur(2.5px);
+      transition: ease-in-out 500ms;
+    }
+  }
+  .text-content-5 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+  }
+
+  .table-4 {
+    background-color: rgba(0, 0, 0, 0);
+    color: $text-color;
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $text-color;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .text-content-5 {
+      width: 80%;
+      font-size: small;
+    }
+  }
+}
+
+// PART 6 LANÇAMENTO FALCON9
+.part-6 {
+  height: 100vh;
+  // }
+  img {
+    height: 100vh;
+  }
+
+  p {
+    background-color: black;
+    color: $text-color;
+  }
+}
+
+// PART 7
+
+.part-7 {
+  background-color: black;
+  color: $text-color;
+  height: 100vh;
+  .text-container-7 {
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons-part-7 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+    button {
+      border: 2px solid white;
+    }
+  }
+}

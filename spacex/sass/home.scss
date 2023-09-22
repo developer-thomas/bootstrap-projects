@@ -1,0 +1,62 @@
+.first-text {
+  height: 65vh;
+}
+
+.saiba-button {
+  width: 170px;
+  padding: 15px 35px;
+  border: 2px solid white;
+}
+// FIRST PART
+
+.first-part {
+  background-image: url("../images/home/01.jpg");
+  // posso colocar essa parte em elementos comuns e aplicar como herança
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.arrowdown {
+  height: 50px;
+  width: 90px;
+}
+
+// SECOND PART
+.second-part {
+  background-image: url("../images/home/02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+//THIRD PART
+
+.third-part {
+  background-image: url("../images/home/03.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.common-section {
+  p {
+    text-shadow: #000 1px 10px 10px;
+  }
+}
+
+// FOURTH PART
+.fourth-part {
+  background-image: url("../images/home/04.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+}

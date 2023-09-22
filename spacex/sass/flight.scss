@@ -1,0 +1,221 @@
+p {
+  text-shadow: $primary-shadow;
+}
+
+.navbar-nav a {
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.bg-flight {
+  background-image: url("../images/flight/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .first-text-flight {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 63vh;
+    &:nth-child(2) {
+      color: $text-color;
+    }
+    p:nth-child(1) {
+      font-weight: 500;
+      text-shadow: $primary-shadow;
+    }
+
+    p:last-child {
+      color: $text-color;
+      font-weight: 10;
+      text-shadow: $primary-shadow;
+    }
+  }
+}
+
+.arrowDown-flight {
+  img {
+    height: 3rem;
+    width: 6rem;
+  }
+}
+
+.earth-top-text {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 40%;
+  }
+
+  @media (max-width: 1024px) {
+    p {
+      font-size: medium;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: small;
+    }
+  }
+  @media (max-width: 326px) {
+    p {
+      margin-top: 10%;
+    }
+  }
+}
+
+// EARTH PART
+
+.earth-part {
+  background-image: url("../images/flight/02.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $text-color;
+
+  .mission-earth {
+    height: 88vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 23%;
+
+    @media (max-width: 1530px) {
+      div button {
+        text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+          1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+      }
+    }
+
+    div {
+      line-height: 2rem;
+    }
+    p:nth-child(2) {
+      font-weight: bold;
+    }
+
+    p:nth-child(3) {
+      font-weight: lighter;
+    }
+
+    button {
+      width: 10rem;
+    }
+  }
+}
+
+// STATION PART
+
+.station-part {
+  background-image: url("../images/flight/03.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $text-color;
+
+  .station-text-container {
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+
+    div {
+      line-height: 2rem;
+    }
+    p:nth-child(2) {
+      font-weight: bold;
+    }
+
+    p:nth-child(3) {
+      font-weight: lighter;
+    }
+
+    button {
+      width: 10rem;
+    }
+  }
+}
+
+// MOON PART
+
+.moon-part {
+  background-image: url("../images/flight/04.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $text-color;
+  .moon-text-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin-right: 23%;
+
+    div {
+      line-height: 2rem;
+    }
+    p:nth-child(2) {
+      font-weight: bold;
+    }
+
+    p:nth-child(3) {
+      font-weight: lighter;
+    }
+
+    button {
+      width: 10rem;
+    }
+  }
+}
+
+// MART PART
+
+.mart-part {
+  background-image: url("../images/flight/05.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: $text-color;
+
+  .mart-text-container {
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+
+    div {
+      line-height: 2rem;
+    }
+    p:nth-child(2) {
+      font-weight: bold;
+    }
+
+    p:nth-child(3) {
+      font-weight: lighter;
+    }
+
+    button {
+      width: 10rem;
+    }
+  }
+}
